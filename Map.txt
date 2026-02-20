@@ -1,0 +1,97 @@
+backend/
+│
+├── src/
+│   │
+│   ├── config/
+│   │     db.js
+│   │
+│   ├── controllers/
+│   │     authController.js
+│   │     expenseController.js
+│   │
+│   ├── middleware/
+│   │     authMiddleware.js
+│   │     errorMiddleware.js
+│   │
+│   ├── models/
+│   │     User.js
+│   │     Expense.js
+│   │
+│   ├── routes/
+│   │     authRoutes.js
+│   │     expenseRoutes.js
+│   │
+│   ├── utils/
+│   │     generateToken.js
+│   │     calculateSummary.js
+│   │
+│   ├── app.js
+│   └── server.js
+│
+├── .env
+├── .gitignore
+├── package.json
+└── package-lock.json
+
+
+
+
+
+frontend/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── api/
+│   │     axios.js
+│   │
+│   ├── assets/
+│   │
+│   ├── components/
+│   │
+│   │     ├── layout/
+│   │     │     Navbar.jsx
+│   │     │     Sidebar.jsx
+│   │
+│   │     ├── dashboard/
+│   │     │     SummaryCard.jsx
+│   │     │     ChartSection.jsx
+│   │     │     ExpenseTable.jsx
+│   │     │     ExpenseRow.jsx
+│   │     │     AddExpenseModal.jsx
+│   │
+│   │     ├── common/
+│   │           Loader.jsx
+│   │           Button.jsx
+│   │           ProtectedRoute.jsx
+│   │
+│   ├── context/
+│   │     AuthContext.jsx
+│   │
+│   ├── hooks/
+│   │     useAuth.js
+│   │     useExpenses.js
+│   │
+│   ├── pages/
+│   │     Login.jsx
+│   │     Register.jsx
+│   │     Dashboard.jsx
+│   │     NotFound.jsx
+│   │
+│   ├── routes/
+│   │     AppRoutes.jsx
+│   │
+│   ├── utils/
+│   │     formatCurrency.js
+│   │     calculateSummary.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── tailwind.config.js
+├── postcss.config.js
+├── vite.config.js
+├── package.json
+└── .gitignore
